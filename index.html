@@ -4,8 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gForms</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100vh;
+            min-height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(103, 58, 183);
+            color: #eee;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 812px;
+        }
+
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 2px dashed #ee6c4d;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .item_left,
+        .item_right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            overflow: hidden;
+        }
+
+
+        .item article {
+            margin-bottom: 30px;
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 1.5em;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .item article strong {
+            color: #ee6c4d;
+        }
+
+        .screenshot {
+            width: 400px;
+            height: 740px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .screenshot img {
+            min-width: 100%;
+            max-width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo .img {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            border: 4px solid #ee6c4d;
+            margin-bottom: 20px;
+        }
+
+        .logo h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .logo article {
+            font-size: 16px;
+            color: #eee;
+        }
+
+        header {
+            padding: 20px 0;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        header ul li {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        header ul li a {
+            color: #eee;
+            text-decoration: none;
+            border-bottom: 1px dashed #ee6c4d;
+        }
+
+        header ul li a:hover {
+            color: #ee6c4d;
+        }
+
+        @media screen and (max-width: 762px) {
+            .item {
+                display: block;
+            }
+
+            .item_left,
+            .item_right {
+                display: block;
+                width: 100%;
+            }
+
+            .screenshot {
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>gForms</h1>
+    <div class="container">
+        <header>
+            <ul>
+                <li>
+                    <a href="./terms/pp.html">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="./terms/tc.html">Terms &amp; Conditions</a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="item">
+            <div class="item_left">
+                <div class="logo">
+                    <img class="img" src="./assets/logo.png" alt="" />
+                    <h3>gForms</h3>
+
+                    <article>
+                        Manage all your <strong>Google Forms</strong><br>in one place on your iOS device
+                    </article>
+
+                    <a href="https://apps.apple.com/app/id6468424143" rel="noopener noreferrer">
+                        <img src="./assets/badge.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="item_right">
+                <div class="screenshot">
+                    <img src="./assets/1_manage_12_framed.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item_left">
+                <div class="screenshot">
+                    <img src="./assets/2_create_12_framed.png" alt="">
+                </div>
+            </div>
+            <div class="item_right">
+                <article>
+                    Create Forms from <strong>over 60</strong><br>prepared Templates
+                </article>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item_left">
+                <article>
+                    <strong>Import</strong>, <strong>Create</strong> and <strong>Edit</strong><br>form items and questions
+                </article>
+            </div>
+            <div class="item_right">
+                <div class="screenshot">
+                    <img src="./assets/3_edit_12_framed.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item_left">
+                <div class="screenshot">
+                    <img src="./assets/4_preview_12_framed.png" alt="">
+                </div>
+            </div>
+            <div class="item_right">
+                <article>
+                    <strong>Preview</strong> the results<br>of your work
+                </article>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item_left">
+                <article>
+                    <strong>Analize</strong> responses<br>with charts and summaries
+                </article>
+            </div>
+            <div class="item_right">
+                <div class="screenshot">
+                    <img src="./assets/5_responses_12_framed.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item_left">
+                <div class="screenshot">
+                    <img src="./assets/6_share_12_framed.png" alt="">
+                </div>
+            </div>
+            <div class="item_right">
+                <article>
+                    <strong>Share</strong> forms links<br />and <strong>QR codes</strong> for them
+                </article>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
